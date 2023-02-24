@@ -80,3 +80,6 @@ p {
     max-width: 9.5vw;
 }
 
+.two { 
+    text-decoration: line-through;
+}

@@ -4,11 +4,24 @@ let btn = document.querySelector ('#button');
 
 
 btn.addEventListener ('click', function () {
-    for (let i = 20; i <=20; i++) {
         let newitem = document.createElement ('p');
+        newitem.classList = "one";
         newitem.textContent = item.value;
-    main.appendChild(newitem);
-    
-}
+        let newCheck = document.createElement ('input')
+        newCheck.type = 'checkbox';
+        newCheck.classList = 'newCheck';
+        newitem.appendChild(newCheck);
+        main.appendChild(newitem);
+        item.value = ''
 })
 
+
+
+main.addEventListener ('click', function (e) {
+if (e.target.className == 'newCheck') { 
+e.target.parentNode.classList = 'two'
+if (e.target.className == 'newCheck' && e.target.checked == false) { 
+    e.target.parentNode.classList = 'one';
+    }
+}
+})
