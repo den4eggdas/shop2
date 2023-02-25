@@ -11,14 +11,18 @@ body {
 
 
 .container { 
-    border-radius: 5%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-end-start-radius: 5%;
+    border-end-end-radius: 5%;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 flex-direction: column;
 max-height: min-content;
-min-width: 1vw;
-max-width: 50vw;
+/* min-width: 1vw; */
+/* max-width: 50vw; */
+width: 50vw;
 margin: 2% auto;
 background: linear-gradient(to bottom right, #9bf8f3, #36708b);
 padding: 0;
@@ -77,9 +81,49 @@ p {
     background: linear-gradient(to bottom right, #e9f6f6, #9addfc);
     color: rgb(65, 5, 120);
     text-align: center;
-    max-width: 9.5vw;
+    width: 9.5vw;
 }
 
 .two { 
     text-decoration: line-through;
+}
+hr {
+    color: none;
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    p {
+        width: 150px
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    p {
+        width: 12.5vw
+    }
+}
+@media screen and (max-width: 1100px) {
+    p {
+        width: 13.5vw
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        width: 145px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 350px;
+    }
 }
