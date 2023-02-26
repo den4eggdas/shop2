@@ -4,15 +4,20 @@ let btn = document.querySelector ('#button');
 
 
 btn.addEventListener ('click', function () {
-        let newitem = document.createElement ('p');
+    if (item.value == '') {
+        alert ('Необходимо заполнить!')  }
+        else { 
+            let newitem = document.createElement ('p');
         newitem.classList = "one";
         newitem.textContent = item.value;
+        main.appendChild(newitem);
         let newCheck = document.createElement ('input')
         newCheck.type = 'checkbox';
         newCheck.classList = 'newCheck';
         newitem.appendChild(newCheck);
-        main.appendChild(newitem);
         item.value = ''
+    
+    }
 })
 
 

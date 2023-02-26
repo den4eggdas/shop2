@@ -1,6 +1,7 @@
 body { 
     font-family: 'Montserrat', sans-serif;
     font-family: 'Mynerve', cursive;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(rgba(49, 13, 88, 0.3), rgba(154, 38, 236, 0.3)), url(images/market.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -125,5 +126,23 @@ hr {
 @media screen and (max-width: 550px) {
     .container {
         width: 350px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .container {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .container {
+        width: 180px;
     }
 }
